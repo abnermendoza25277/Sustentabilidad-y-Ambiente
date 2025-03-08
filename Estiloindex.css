@@ -1,0 +1,147 @@
+body{
+   
+    background-image: url(img/fondosustentabilidad.jpg); /* Reemplaza con la ruta de tu imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fondo{
+
+.contenido {
+    text-align: center;
+    color: rgb(0, 0, 0); /* Cambia el color del texto para que sea visible sobre el fondo */
+    padding-top: 50px; /* Agrega un espacio superior al contenido */
+    font-family: Arial, sans-serif;
+}
+}
+.imagen{
+    width: 250px;
+    height:auto ;
+    position: absolute;                
+    left: 62% ;
+    border-radius: 10%;
+    display: inline-block;
+}
+img{
+    width: 250px;
+    border-radius: 10%;
+}
+.TituloPia{
+    text-align:center;
+    font-size: 40px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+   
+}
+.Texto{
+    color: rgb(2, 2, 2);
+    padding: 5px;
+    font-size: 25px;
+    display: inline-block;
+}
+.barralateral{
+    background: rgb(78, 235, 156);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:30px;
+    border-radius:50%;
+    
+}
+.barrita{
+    background:rgb(214,211,174) ;
+    width: 35.5px;
+    height: 7.1428px;
+    margin:7.1428px;
+    border-radius:3.5714px; 
+}
+.barralateral:hover{
+    width: 17%;
+    height: 97%;
+    border-radius:10px;
+    transition-duration:.5s;
+}
+.barralateral:hover .barrita{
+    background:rgb(255, 255, 255) ;
+    transition-duration:1s;
+}
+.contenedor{
+    display:none;
+    margin:0px;
+    height: 20px;
+    color:rgb(0, 0, 0);
+    animation: contenedor .5s;
+    text-align:center;
+    padding:10px;
+}
+.con{
+    display:none;
+    margin:0px;
+    height: 20px;
+    color:rgb(0, 0, 0);
+    animation: contenedor .5s;
+    text-align:center;
+    padding:10px;
+    position: relative;
+    transition:top 1s;
+}
+.barralateral:hover .contenedor{
+    display: block;
+    transition-duration:1s;
+}
+.barralateral:hover .con{
+    display: block;
+    transition-duration:1s;
+}
+@keyframes contenedor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contenedor:hover{
+    background: #ffffff;
+}
+.con:hover{
+    background: #f8f8f8;
+}
+a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+.contenedor1{
+    display:none;
+    height: 20px;
+    padding:10px;
+    position: relative;
+    top: 10px;
+    animation: contenedor1 1s;
+}
+.contenedor:hover .contenedor1{
+    display:block;
+    transition-duration:1s;
+    opacity:1;
+}
+@keyframes contenedor1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contenedor1:hover{
+    background: #ffffff;
+}
+.con:hover .contenedor1{
+    display:block;
+    transition-duration:1s;
+}
+.contenedor:hover + .con{
+    top:81px;
+    transition:top 1s;
+}
